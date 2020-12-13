@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Android7.MainPage2"
+             Title="CVJoy2">
+
+    <Grid BackgroundColor="#ff000000" RowSpacing="3" ColumnSpacing="3" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"  />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <BoxView Grid.Row="0"  Grid.Column="0" 
+                 Color="Orange" 
+                 HorizontalOptions ="Start" 
+                 WidthRequest="50" 
+                 x:Name="wearFL"
+        />
+        <BoxView Grid.Row="0"  Grid.Column="2" 
+                 Color="Orange" 
+                 HorizontalOptions ="End" 
+                 WidthRequest="50" 
+                 x:Name="wearFR"
+        />
+        <BoxView Grid.Row="2"  Grid.Column="0" 
+                 Color="Orange" 
+                 HorizontalOptions ="Start" 
+                 WidthRequest="50" 
+                 x:Name="wearRL"
+        />
+        <BoxView Grid.Row="2"  Grid.Column="2" 
+                 Color="Orange" 
+                 HorizontalOptions ="End" 
+                 WidthRequest="50" 
+                 x:Name="wearRR"
+        />
+
+        <StackLayout Grid.Row="0"  Grid.Column="0"  Grid.RowSpan="3" Grid.ColumnSpan="3"  
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                Spacing="0"
+        >
+
+            <Label 
+               Text="KMs"
+               TextColor="#ff4060A0"
+               FontSize="30"
+               HorizontalOptions="Center"
+                HeightRequest="30"
+                VerticalTextAlignment="End"
+               />
+
+            <Label 
+                x:Name="Distance"
+                Text="000.0"
+                TextColor="White"
+                FontSize="50"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                />
+
+            <Label 
+               Text="Position"
+               TextColor="#ff4060A0"
+               FontSize="30"
+               HorizontalOptions="Center"
+                HeightRequest="50"
+                VerticalTextAlignment="End"
+               />
+
+            <Label 
+                x:Name="Position"
+                Text="1/10"
+                TextColor="White"
+                FontSize="50"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                />
+
+            <Label 
+               Text="Lap"
+               TextColor="#ff4060A0"
+               FontSize="30"
+               HorizontalOptions="Center"
+                HeightRequest="50"
+                VerticalTextAlignment="End"
+               />
+
+            <Label 
+                x:Name="Lap"
+                Text="1/10"
+                TextColor="White"
+                FontSize="50"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                />
+
+
+            <Label 
+               Text="Fuel"
+               TextColor="#ff4060A0"
+               FontSize="30"
+               HorizontalOptions="Center"
+                HeightRequest="50"
+                VerticalTextAlignment="End"
+               />
+
+            <Label 
+                x:Name="Fuel"
+                Text="35l / 1200Km"
+                TextColor="White"
+                FontSize="50"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                />
+            <Label 
+                x:Name="FuelKKm"
+                Text="5.9l /100Km"
+                TextColor="White"
+                FontSize="50"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                />
+
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>
